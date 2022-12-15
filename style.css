@@ -210,7 +210,7 @@ font-size: 2rem;
 }
 
 .first-box__content {
-
+	position: relative;
 }
 
 .available {
@@ -250,6 +250,28 @@ margin: 2rem 0;
 
 }
 
+.first-box__img img {
+	width: 25rem;
+	position: absolute;
+	right: 25rem;
+	top: 18rem;
+	animation-duration: 4s;
+  animation-name: float;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
 .first-box__content button {
 	padding: 2rem 2.5rem;
 	display: flex;
@@ -257,15 +279,14 @@ margin: 2rem 0;
 	border-radius: 1.5rem;
 	border: none;
 	margin: 2rem 0;
-	 font-family: "Roboto", sans-serif;
-	 font-weight: bold;
-	 background: linear-gradient(55deg, rgba(112,106,242,1) 0%, rgba(102,141,253,1) 48%, rgba(177,91,253,1) 100%);
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	background: linear-gradient(55deg, rgba(112,106,242,1) 0%, rgba(102,141,253,1) 48%, rgba(177,91,253,1) 100%);
 	color: white;
-	animation-duration: 3s;
+	animation-duration: 4s;
   animation-name: example;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
-	transition: all 1s ease-in;
+	transition: background 1s ease-in;
 }
 
 @keyframes example {
