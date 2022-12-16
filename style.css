@@ -452,7 +452,7 @@ z-index: 1;
 .second-box__body--content {
 	display: flex;
 	flex-direction: column;
-
+margin-left: 1rem;
 }
 
 .second-box__content--top {
@@ -463,7 +463,7 @@ margin-bottom: 2rem;
 }
 
 .second-box__content--top-left {
-margin-right: 0.3rem;
+
 }
 
 .second-box__content--top-left span {
@@ -479,6 +479,7 @@ margin-right: 0.3rem;
 }
 .second-box__content--top-right {
 	position: relative;
+	padding-left:1.2rem ;
 }
 
 .second-box__content--top-right::before {
