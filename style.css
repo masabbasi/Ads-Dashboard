@@ -76,6 +76,7 @@ a {
 .menu__icon {
   filter: invert(43%) sepia(9%) saturate(1339%) hue-rotate(196deg)
     brightness(91%) contrast(84%);
+		cursor: pointer;
 }
 
 .menu__lists {
@@ -90,6 +91,7 @@ a {
   align-items: center;
   padding: 1.5rem 2rem;
   margin: 0.5rem 0;
+	cursor: pointer;
 }
 
 .menu__lists--item-active,
@@ -143,6 +145,7 @@ a {
   background-color: #765cde;
   padding: 1rem 1.5rem;
   border-radius: 1.2rem;
+	cursor: pointer;
 }
 
 .create-btn img {
@@ -161,6 +164,7 @@ a {
 .profile__icon {
   filter: invert(39%) sepia(8%) saturate(1519%) hue-rotate(196deg)
     brightness(99%) contrast(83%);
+		cursor: pointer;
 }
 
 .profile__name {
@@ -287,7 +291,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: white;
-	background-size: 200% 200%;
+  background-size: 200% 200%;
   background-image: linear-gradient(
     -45deg,
     rgba(59, 173, 227, 1) 0%,
@@ -296,6 +300,7 @@ a {
     rgba(255, 53, 127, 1) 100%
   );
   animation: AnimateBG 4s ease infinite;
+	cursor: pointer;
 }
 
 @keyframes AnimateBG {
@@ -318,3 +323,200 @@ a {
     brightness(108%) contrast(101%);
 }
 
+.second-box {
+}
+
+.second-box__top {
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+  margin: 3rem 0;
+}
+
+.second-box__top--title {
+  display: flex;
+  align-items: center;
+}
+
+.second-box__top--title h2 {
+  color: #d0d3e7;
+  font-weight: 400;
+}
+
+.campaigns-counter {
+  background-color: #3795ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 100%;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.second-box__top--icon {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.second-box__icon {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(40%) sepia(24%) saturate(408%) hue-rotate(196deg)
+    brightness(97%) contrast(100%);
+		cursor: pointer;
+}
+
+.second-box__icon-plus , .arrow {
+	background-color: #252943;
+	padding: 1rem;
+	border-radius: 1.5rem;
+	margin-left: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.second-box__icon-plus , .arrow {
+	margin-right: 2rem;
+}
+
+.second-box__bot {
+  background-color: #1c1f36;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.second-box__bot--head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.second-box__head--title {
+color: #d0d3e7;
+position: relative;
+}
+
+.second-box__head--title::before {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: -1.5rem;
+	background-color: #9cc821;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+}
+
+.second-box__head--icon {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.second-box__body {
+position: relative;
+display: flex;
+justify-content: space-between;
+z-index: 1;
+}
+
+.second-box__body--img {
+	width: 40rem;
+}
+
+.second-box__body--img img {
+	width: 100%;
+}
+
+.bg2 {
+	z-index: -1;
+  border-radius: 100%;
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(131, 80, 82, 1) 0%,
+    rgba(87, 48, 107, 1) 100%
+  );
+  filter: blur(50px);
+}
+
+.second-box__body--content {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.second-box__content--top {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-bottom: 2rem;
+}
+
+.second-box__content--top-left {
+margin-right: 0.3rem;
+}
+
+.second-box__content--top-left span {
+	font-size: 1rem;
+	color: #646887;
+	margin-bottom: 1rem;
+}
+
+.second-box__content--top-left h3 {
+	color:#d0d3e7;
+	font-size: 2rem;
+	/* max-width: 25rem; */
+}
+.second-box__content--top-right {
+	position: relative;
+}
+
+.second-box__content--top-right::before {
+content: "3.42%";
+color: #9cc821;
+font-size: 1.5rem;
+font-weight: bold;
+position: absolute;
+right: 1rem;
+top: -1rem;
+}
+
+.second-box__content--top-right img {
+	width: 100%;
+}
+
+.second-box__content--bot {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 1.5rem;
+}
+
+.second-box__content--bot span {
+	display: block;
+	color: #d0d3e7;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.second-box__content--bot .under-number {
+	color: #646887;
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+.second-box__content--bot div:nth-child(2) {
+	padding: 0 2rem;
+	border-left: 1px solid #282d4a ;
+	border-right: 1px solid #282d4a;
+}
