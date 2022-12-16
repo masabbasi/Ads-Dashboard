@@ -32,7 +32,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 18% 58% 24%;
+  grid-template-columns: 18% 56% 26%;
 }
 
 /* Reset Style */
@@ -241,7 +241,7 @@ a {
 .first-box__img img {
   width: 25rem;
   position: absolute;
-  right: 32rem;
+  right: 34rem;
   top: 24rem;
   animation-duration: 5s;
   animation-name: float;
@@ -596,6 +596,7 @@ margin: 1rem 0;
 }
 
 .activity__box--text {
+	width: 19rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -623,12 +624,102 @@ margin: 1rem 0;
 	padding: 0.8rem;
 }
 
-.second-box__icon {
-
-}
-
 .facebook-icon {
 	width: 2rem;
 	height: 2rem;
 	margin-left: 1rem;
+}
+
+.comment {
+	filter: invert(39%) sepia(63%) saturate(821%) hue-rotate(216deg) brightness(91%) contrast(93%);	
+}
+
+.msg {
+	height: 300px;
+	overflow: hidden;
+	align-items: flex-start;
+	position: relative;
+}
+
+.activity__box--msg-l ,.activity__box--msg-r{
+	position: absolute;
+	top: 8rem;
+	width: 20rem;
+	padding: 1rem;
+	border-radius: 3rem;
+	background-color: #252944;
+	margin-left: 1rem;
+}
+
+.activity__box--msg-r {
+	top: 18rem;
+	margin-left: 8rem;
+}
+
+.activity__box--msg-l::before {
+	content: "";
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	top: 4.5rem;
+	left: -0.5rem;
+	background-color: #252944;
+	transform: rotate(45deg);
+}
+
+.activity__box--msg-r::before {
+	content: "";
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	top: 4.5rem;
+	right: -0.5rem;
+	background-color: #252944;
+	transform: rotate(45deg);
+}
+
+.activity__box--msg-l-msg, .activity__box--msg-r-msg {
+color:#62678c;
+font-size: 1.5rem;
+}
+
+.activity__box--msg-l-time , .activity__box--msg-r-time {
+color:#434765;
+font-size: 1.2rem;
+}
+
+.msg-bot {
+	background-color: #1c1f36;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 1px solid #2a2e4c;
+}
+
+.msg-bot hr {
+	color: #2a2e4c;
+}
+
+.msg-bot input {
+	border: none;
+	background-color: transparent;
+	padding: 1.5rem 1rem;
+	outline: none;
+	color: #474d7a;
+}
+
+.msg-bot input::placeholder {
+	color: #5b5f7d;
+}
+
+.send-btn {
+background: none;
+border: none;
+}
+
+.send-btn img {
+	filter: invert(43%) sepia(9%) saturate(1075%) hue-rotate(196deg) brightness(94%) contrast(97%);
 }
