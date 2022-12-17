@@ -239,10 +239,11 @@ a {
 }
 
 .first-box__img img {
-  width: 25rem;
-  position: absolute;
-  right: 34rem;
-  top: 24rem;
+  width: 23rem;
+	margin-right: -7rem;
+  /* position: absolute;
+  right: 36rem;
+  top: 24rem; */
   animation-duration: 5s;
   animation-name: float;
   animation-iteration-count: infinite;
@@ -528,10 +529,6 @@ margin-bottom: 1.5rem;
   color: #d0d3e7;
 }
 
-.activity {
-
-}
-
 .activity__head {
 	display: flex;
 	justify-content: space-between;
@@ -635,24 +632,33 @@ margin: 1rem 0;
 }
 
 .msg {
-	height: 300px;
-	overflow: hidden;
-	align-items: flex-start;
-	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.msg-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.msg-all {
+	height: 120px;
+	overflow-y: scroll;
+	padding: 0.5rem 1rem;
 }
 
 .activity__box--msg-l ,.activity__box--msg-r{
-	position: absolute;
-	top: 8rem;
 	width: 20rem;
 	padding: 1rem;
 	border-radius: 3rem;
 	background-color: #252944;
 	margin-left: 1rem;
+	position: relative;
+	margin-bottom:1rem;
 }
 
 .activity__box--msg-r {
-	top: 18rem;
 	margin-left: 8rem;
 }
 
@@ -691,16 +697,11 @@ font-size: 1.2rem;
 .msg-bot {
 	background-color: #1c1f36;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	border-top: 1px solid #2a2e4c;
-}
-
-.msg-bot hr {
-	color: #2a2e4c;
+	padding-top: 1rem;
 }
 
 .msg-bot input {
@@ -723,4 +724,39 @@ cursor: pointer;
 
 .send-btn img {
 	filter: invert(43%) sepia(9%) saturate(1075%) hue-rotate(196deg) brightness(94%) contrast(97%);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e467e;
+  border: 0px none #ff0000;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e467e;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #3e467e;
+}
+::-webkit-scrollbar-track {
+  background: #1f2f44;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #1f2f44;
+}
+::-webkit-scrollbar-track:active {
+  background: #1f2f44;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
