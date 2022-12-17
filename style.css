@@ -597,7 +597,8 @@ margin: 1rem 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: 0.8rem;
+	margin-left: 1rem;
+	flex-grow: 1;
 }
 
 .activity__box--text-top {
